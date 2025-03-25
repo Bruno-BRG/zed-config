@@ -1,0 +1,56 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+{
+  "ui_font_size": 16,
+  "buffer_font_size": 18,
+  "tabWidth": 2,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
+  "vim_mode": true,
+  "vim": {
+    "enabled": true,
+    "default_mode": "normal",
+    "toggle_relative_line_numbers": true,
+    "use_system_clipboard": "always",
+    "use_multiline_find": false,
+    "use_smartcase_find": false,
+    "highlight_on_yank_duration": 200,
+    "custom_digraphs": {}
+  },
+  "lsp": {
+    "lua-language-server": {
+      "initialization_options": {
+        "Lua": {
+          "runtime": {
+            "version": "LuaJIT"
+          },
+          "diagnostics": {
+            "enable": true,
+            "globals": ["vim"]
+          },
+          "workspace": {
+            "library": []
+          },
+          "telemetry": {
+            "enable": false
+          }
+        }
+      }
+    }
+  },
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": false
+    },
+    "hunk_style": "staged_hollow"
+  }
+}
